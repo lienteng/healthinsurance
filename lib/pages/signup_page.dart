@@ -19,7 +19,7 @@ class _SignUpPageState extends State<SignUpPage> {
   int? _groupd = 0;
   File? image;
   final _formKey = GlobalKey<FormState>();
-  late TextEditingController _namecontroller = TextEditingController();
+  // late TextEditingController _namecontroller = TextEditingController();
 
   Future _getFromCamera(ImageSource source) async {
     XFile? pickedFile = await ImagePicker().pickImage(
@@ -334,14 +334,14 @@ class _SignUpPageState extends State<SignUpPage> {
                 },
                 child: const Text('ລົງທະບຽນ'),
               ),
-              MyButton(
-                color: Colors.deepPurple,
-                width: 80.w,
-                title: 'Login',
-                func: () {
-                  Navigator.pushNamed(context, '/LoginPage');
-                },
-              ),
+              // MyButton(
+              //   color: Colors.deepPurple,
+              //   width: 80.w,
+              //   title: 'Login',
+              //   func: () {
+              //     Navigator.pushNamed(context, '/LoginPage');
+              //   },
+              // ),
             ],
           ),
         ),
